@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin:0;
+            padding:0;
+        }
+        .clearfix:after{
+            content:"";
+            display:block;
+            clear:both;
+        }
+
+        body {
+            font-size:18px;
+        }
+        .site-wrap{
+            width: 1200px;
+            margin:0 auto;
+        }
+        /* end css chung  */
+        .header{
+            height: 250px;
+            background-color: gray;
+            color: white;
+
+            padding:20px;
+            box-sizing: border-box;
+        }
+        /* end css header*/
+        .nav ul{
+            list-style:none;
+            margin:0;
+            padding:0 10px;
+            box-sizing: border-box;
+            background-color: yellowgreen;
+        }
+        .nav ul > li {
+            float:left;
+            width:150px;
+            padding:10px 0;
+            background-color: yellowgreen;
+        }
+        .nav ul > li > a {
+            text-decoration:none;
+            color:orangered;
+        }
+        .nav ul > li > a:hover {
+            color:orchid;;
+        }
+        /* end css navigation */
+
+        .content{
+            width: 100%;
+        }
+
+        .sidebar-left{
+            width: 25%;
+            background-color: grey;
+            color: white;
+            height: 750px;
+            float:left;
+            padding:20px;
+            box-sizing: border-box;
+        }
+        
+        .sidebar-right{
+            width: 25%;
+            background-color: grey;
+            color: white;
+            height: 750px;
+            float: right;
+            padding:20px;
+            box-sizing: border-box;
+        }
+
+        .main-content{
+            width: 50%;
+            background-color: brown;
+            height: 750px;
+            float:left;
+            padding:20px;
+            box-sizing: border-box;
+        }
+
+        /* end css content */
+
+        .footer{
+            width: 100%;
+            padding:20px;
+            box-sizing: border-box;
+            height: 250px;
+            background-color: deepskyblue;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="site-wrap">
+
+        <header class="header">
+            <h1>Header của trang web</h1>
+        </header> <!-- end.header -->
+
+        <nav class="nav">
+            <ul class="clearfix">
+                <li><a href="">Trang chủ</a></li>
+                <li><a href="">Giới thiệu</a></li>
+                <li><a href="">Sản phẩm</a></li>
+                <li><a href="">Liên hệ</a></li>
+            </ul>
+        </nav> <!-- end .nav -->
+
+        <div class="content clearfix">
+            <aside class="sidebar sidebar-left">
+
+                <h4>Sidebar left</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo natus pariatur, reiciendis animi tempora repudiandae consequuntur sequi? Debitis minima explicabo, optio porro ut ea maiores quas. Atque vero sint perferendis.</p>
+
+            </aside> <!-- end .sidebar-left -->
+
+            <main class="main-content">
+
+                <h2>Nội dung chính của trang web</h2>
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quod cum voluptate eaque? Expedita odio blanditiis itaque, porro, voluptate perspiciatis necessitatibus distinctio ullam labore aperiam dignissimos quidem nihil. Officia, ea?
+                </div>
+
+            </main> <!-- end .main-content -->
+
+            <aside class="sidebar sidebar-right">
+
+                <h4>Sidebar right</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo natus pariatur, reiciendis animi tempora repudiandae consequuntur sequi? Debitis minima explicabo, optio porro ut ea maiores quas. Atque vero sint perferendis.</p>
+
+            </aside> <!-- end .sidebar-right -->
+
+        </div> <!-- end .content -->
+
+        <footer class="footer">
+
+            <h3>Phần chân của website</h3>
+            <p>Copyright thuộc về W3school 2020</p>
+
+        </footer> <!-- end .footer -->
+
+    </div>
+    <!-- end .site-wrap -->
+</body>
+</html>
